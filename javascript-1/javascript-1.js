@@ -21,9 +21,7 @@ let myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
 //CODE HERE
-// for (z)
-
-// const foundZ = z
+const foundZ = ['0'['0'['1']]]
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -40,7 +38,7 @@ const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
 //CODE HERE
-
+const animals = ['...forest', '...ocean', '...savannah', '...desert'];
 
 /*
     Now use the spread operator to make a copy of your animals array.
@@ -48,7 +46,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-
+const animalsCopy = ['...forest', '...ocean', '...savannah', '...desert', 'elephant']
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -59,8 +57,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-// function compareNums(5, 10) => {
-//     return 
+// function compareNums => (5, 10) {
 
 // }
 
@@ -78,7 +75,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-  let bestMovie = () => ' is the best movie ever!'
+  let bestMovie 
 
 
   
@@ -228,7 +225,7 @@ function Dog(name, age, breed, tricks) {
 */
 
 //CODE HERE
-  const fido = new Dog('Fido', '3', 'Jack Russell', ['sit', 'shake']);
+  var fido = new Dog('Fido', '3', 'Jack Russell', ['sit', 'shake']);
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -295,7 +292,14 @@ function Dog(name, age, breed, tricks) {
 */
 
 //CODE HERE
+function Phone(brand, model, storage, color, sold){
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.sold = sold;
 
+}
   
 /*
     Next make three new phones using your constructor function.
@@ -309,12 +313,12 @@ function Dog(name, age, breed, tricks) {
 */
 
 //CODE HERE
-  // let phone1 = 
+  let phone1 = new Phone('Verizon', 'apple', 611, 'red', 'false');
   
-  // let phone2 = 
+  let phone2 = new Phone('t-mobile', 'xj6', 244, 'black', 'false');
   
-  // let phone3 = 
-  
+  let phone3 = new Phone('att', 'blackberry', 422, 'pink', 'false');
+
 /*
     Last, add a prototype method to Phone.
     Call the method 'sell'.
@@ -324,5 +328,6 @@ function Dog(name, age, breed, tricks) {
 */
 
 //CODE HERE
-
-  
+Phone.prototype.sell = function(){
+    alert('Ring ring, I am a ${this.brand}')
+}
