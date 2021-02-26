@@ -131,6 +131,16 @@ const shippingInfo = {
 
 //CODE HERE
 
+const obj = {
+  name:'contactInfo'
+};
+
+const obj2 = {
+  name:'shippingInfo'
+};
+
+const helensInfo=Object.assign(contactInfo, shippingInfo);
+
 ////////////////////PROBLEM 6////////////////////
 /*
   Helen has a daughter named Ellen that lives at the same address.

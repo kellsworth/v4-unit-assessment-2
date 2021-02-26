@@ -9,7 +9,7 @@
 */
 
 //CODE HERE
-
+let myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 
 ////////////////////PROBLEM 2////////////////////
 /*
@@ -21,6 +21,9 @@
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
 //CODE HERE
+// for (z)
+
+// const foundZ = z
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -56,6 +59,13 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
+// function compareNums(5, 10) => {
+//     return 
+
+// }
+
+
+
 
   
 ////////////////////PROBLEM 5////////////////////
@@ -68,7 +78,9 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-  
+  let bestMovie = () => ' is the best movie ever!'
+
+
   
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -76,7 +88,9 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-  
+  let jsNinja = () => {
+      return 'I am a JavaScript ninja!'
+  };
 
 ////////////////////PROBLEM 7////////////////////
 
@@ -97,7 +111,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-  
+  delete gameInfo.rating
 
 ////////////////////PROBLEM 8////////////////////
 
@@ -161,6 +175,10 @@ const classes = [
 */
 
 //CODE HERE
+for (var prop in classes) {
+    inPerson[prop]=false;
+        console.log(classes[inPerson]);      
+}
 
   
 ////////////////////PROBLEM 10////////////////////
@@ -177,7 +195,8 @@ let pairsArray = []
 //DO NOT EDIT CODE ABOVE
 
 //CODE HERE
-
+for(var prop in lettersToPair)
+    pairsArray.push()
     
 
 //////////////////////////////////PROBLEMS 11-14//////////////////////////////////
@@ -194,7 +213,13 @@ let pairsArray = []
 */
 
 //CODE HERE
+function Dog(name, age, breed, tricks) {
+    this.name = name;
+    this.age = age;
+    this.breed = breed;
+    this.tricks = tricks;
 
+}
 
 /*
     Invoke your dog constructor passing in 'Fido' for the name, 3 for the age, 
@@ -203,7 +228,7 @@ let pairsArray = []
 */
 
 //CODE HERE
-  
+  const fido = new Dog('Fido', '3', 'Jack Russell', ['sit', 'shake']);
 
 ////////////////////PROBLEM 12////////////////////
 /*
