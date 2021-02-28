@@ -21,7 +21,10 @@ let myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
 //CODE HERE
-const foundZ = ['0'['0'['1']]]
+
+const foundZ = [[[1]]];
+    // console.log(nestedLetters[foundZ]
+
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -38,7 +41,7 @@ const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
 //CODE HERE
-const animals = ['...forest', '...ocean', '...savannah', '...desert'];
+const animals = [...forest, ...ocean, ...savannah, ...desert]
 
 /*
     Now use the spread operator to make a copy of your animals array.
@@ -46,7 +49,9 @@ const animals = ['...forest', '...ocean', '...savannah', '...desert'];
 */
 
 //CODE HERE
-const animalsCopy = ['...forest', '...ocean', '...savannah', '...desert', 'elephant']
+const animalsCopy = [...forest, ...ocean, ...savannah, ...desert]
+    animalsCopy.push('elephant');
+
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -57,9 +62,13 @@ const animalsCopy = ['...forest', '...ocean', '...savannah', '...desert', 'eleph
 */
 
 //CODE HERE
-// function compareNums => (5, 10) {
+const num1 = 10
+const num2 = 1
 
-// }
+function compareNums(num1, num2){
+    if (num1 >= num2)
+    return num1
+}
 
 
 
@@ -75,9 +84,13 @@ const animalsCopy = ['...forest', '...ocean', '...savannah', '...desert', 'eleph
 */
 
 //CODE HERE
-  let bestMovie 
-
-
+  const bestMovie = ['Sharknado']
+//   const movieBuff - bestMovie.map(function(element, index, array)) {
+//       return element + ' is the best movie ever!'
+//   }
+//   }
+  
+    
   
 ////////////////////PROBLEM 6////////////////////
 /*
