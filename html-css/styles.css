@@ -12,3 +12,144 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Nunito', Arial;
+}
+
+header {
+  background-color: rgb(37, 37, 37);
+  color: rgb(42, 171, 226);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  font-size: 10px;
+  color: aliceblue;
+
+}
+
+nav h2 {
+  font-weight: normal;
+}
+
+main {
+  padding: 30px 120px;
+  display: flex;
+
+}
+
+main h3 {
+  margin-bottom: 20px;
+
+}
+
+main p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position:relative
+}
+
+.image-gallery img {
+  width: 24%;
+  margin: 4%;
+}
+
+.image-gallery h5 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color:rgb(42, 171, 226);
+
+}
+
+.container-right {
+  min-width: 25%;
+  margin-left: 120px;
+}
+
+.upper-right {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px
+}
+
+.upper-right img {
+  width: 70%;
+}
+
+.container-right div {
+  box-shadow: 0 0 40px rgb(172, 170, 170);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.upper-right h6 {
+  font-size: 20px;
+}
+
+.lower-right {
+  width: 100%;
+  padding: 20px 50px;
+  
+}
+
+li {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.lower-right h7 {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  height: 60px;
+  background-color: rgb(42, 171, 226);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+footer div {
+  width: 35px;
+  height: 35px;
+  border: 3px solid black ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
