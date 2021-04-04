@@ -37,6 +37,11 @@ let foods = [
 
 //CODE HERE
 
+// foods.forEach(function([carbs, protein, fat]) {
+//   const calories = ()
+//   console.log(calories)
+// });
+
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
   For problems 2-4, you will be working with the products array below.
@@ -82,6 +87,10 @@ const products = [
 
 //CODE HERE
 
+const saleProducts = products.map(function (name, color, price) {
+  // return price - 25 %
+});
+
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -91,6 +100,10 @@ const products = [
 */
 
 //CODE HERE
+
+const blueProducts = saleProducts.prototype.includes(color) {
+  // return color = ['blue']
+};
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -132,14 +145,14 @@ const shippingInfo = {
 //CODE HERE
 
 const obj = {
-  name:'contactInfo'
+  name: 'contactInfo'
 };
 
 const obj2 = {
-  name:'shippingInfo'
+  name: 'shippingInfo'
 };
 
-const helensInfo=Object.assign(contactInfo, shippingInfo);
+const helensInfo = Object.assign(contactInfo, shippingInfo);
 
 ////////////////////PROBLEM 6////////////////////
 /*
