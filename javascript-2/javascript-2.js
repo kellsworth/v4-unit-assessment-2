@@ -37,10 +37,14 @@ let foods = [
 
 //CODE HERE
 
-// foods.forEach(function([carbs, protein, fat]) {
-//   const calories = ()
-//   console.log(calories)
-// });
+foods.forEach((foodObj) => {
+  const { carbs, protein, fat } = foodObj;
+
+  foodObj.calories = (carbs * 4) + (protein * 4) + (fat * 9)
+  console.log(foodObj)
+});
+
+//
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -87,8 +91,10 @@ const products = [
 
 //CODE HERE
 
-const saleProducts = products.map(function (name, color, price) {
-  // return price - 25 %
+const saleProducts = products.map((myProduct) => {
+  const { price } = myProduct
+  myProduct.price = (price * .75)
+  return myProduct
 });
 
 ////////////////////PROBLEM 3////////////////////
@@ -101,9 +107,11 @@ const saleProducts = products.map(function (name, color, price) {
 
 //CODE HERE
 
-const blueProducts = saleProducts.prototype.includes(color) {
-  // return color = ['blue']
-};
+const blueProducts = saleProducts.filter((product) => {
+  return product.color.includes('blue') //will check if blue is in the color array
+
+});
+
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -113,6 +121,12 @@ const blueProducts = saleProducts.prototype.includes(color) {
 */
 
 //CODE HERE
+
+const orderTotal = blueProducts.reduce((acc, product) => {
+  return acc + product.price
+
+}, 0)
+
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -144,14 +158,6 @@ const shippingInfo = {
 
 //CODE HERE
 
-const obj = {
-  name: 'contactInfo'
-};
-
-const obj2 = {
-  name: 'shippingInfo'
-};
-
 const helensInfo = Object.assign(contactInfo, shippingInfo);
 
 ////////////////////PROBLEM 6////////////////////
@@ -162,6 +168,12 @@ const helensInfo = Object.assign(contactInfo, shippingInfo);
 */
 
 //CODE HERE
+const ellensInfo = {
+  ...helensInfo,
+  name: 'Ellen',
+  email: 'ellen@email.com'
+}
+
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -169,6 +181,8 @@ const helensInfo = Object.assign(contactInfo, shippingInfo);
 */
 
 //CODE HERE
+const { email } = ellensInfo
+
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -177,6 +191,8 @@ const helensInfo = Object.assign(contactInfo, shippingInfo);
 */
 
 //CODE HERE
+
+const { zipCode, state } = shippingInfo
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
@@ -239,6 +255,8 @@ const userInfo = {
 */
 
 //CODE HERE
+const shouldAlert = userInfo.settings.alerts
+
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -247,6 +265,8 @@ const userInfo = {
 */
 
 //CODE HERE
+const topic = userInfo.topics[userInfo.topics.length - 1]
+
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -255,6 +275,8 @@ const userInfo = {
 */
 
 //CODE HERE
+const commenterId = userInfo.comments[1].responses[0].userId
+
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -274,6 +296,26 @@ const userInfo = {
 */
 
 //CODE HERE
+
+const person = {
+  name: 'Jasmine',
+  age: 24,
+  jobs: ['cashier', 'receptionist', 'teller'],
+  birthday: function () {
+    this.age += 1
+  },
+  favorites: {
+    color: 'blue',
+    number: 5,
+    book: 'Harry Potter',
+  },
+  kids: [
+    { name: 'Lexi', age: 8 },
+    { name: 'Ryan', age: 10 },
+  ]
+}
+
+
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -299,7 +341,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -312,6 +354,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
